@@ -2039,8 +2039,8 @@ entity API_BUSINESS_PARTNER.A_BusinessPartnerAddress {
   to_BPAddrDepdntIntlLocNumber : Association to API_BUSINESS_PARTNER.A_BPAddrDepdntIntlLocNumber {  };
   to_BPIntlAddressVersion : Association to many API_BUSINESS_PARTNER.A_BPIntlAddressVersion {  };
 
+to_EmailAddress : Composition of many API_BUSINESS_PARTNER.A_AddressEmailAddress on to_EmailAddress.AddressID = AddressID;
 to_PhoneNumber : Composition of many API_BUSINESS_PARTNER.A_AddressPhoneNumber on to_PhoneNumber.AddressID = AddressID;
-to_EmailAddress : Association to many API_BUSINESS_PARTNER.A_AddressEmailAddress {  };
   to_FaxNumber : Association to many API_BUSINESS_PARTNER.A_AddressFaxNumber {  };
   to_MobilePhoneNumber : Association to many API_BUSINESS_PARTNER.A_AddressPhoneNumber {  };
   to_URLAddress : Association to many API_BUSINESS_PARTNER.A_AddressHomePageURL {  };
